@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هكر لفعل الخير | Ethical Hacker Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        body { font-family: 'Tajawal', sans-serif; background-color: #0f172a; color: white; scroll-behavior: smooth; }
+        .hacker-card { transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.1); }
+        .hacker-card:hover { transform: translateY(-10px); border-color: #3b82f6; box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.5); }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body>
+
+    <nav class="glass fixed w-full z-50 top-0 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                🛡️ هكر لفعل الخير
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#home" class="hover:text-blue-400 transition">الرئيسية</a>
+                <a href="#experts" class="hover:text-blue-400 transition">الخبراء</a>
+                <a href="#terms" class="hover:text-blue-400 transition">الشروط</a>
+                <a href="#contact" class="hover:text-blue-400 transition">الدعم الفني</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">حل مشاكلك التقنية بأسلوب <span class="text-blue-500">أخلاقي</span></h1>
+            <p class="text-slate-400 text-lg mb-10">المنصة الأولى لربط الضحايا بخبراء الأمن السيبراني لاسترداد الحقوق ومكافحة الابتزاز "لفعل الخير فقط".</p>
+            <a href="#experts" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-bold text-lg shadow-lg shadow-blue-500/30 transition-all">استكشف الخبراء الآن</a>
+        </div>
+    </section>
+
+    <section id="experts" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center underline decoration-blue-500 decoration-4 underline-offset-8">الخبراء المتاحون</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="hacker-card bg-slate-800 p-8 rounded-3xl text-center">
+                    <div class="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">👨‍ق</div>
+                    <h3 class="text-xl font-bold mb-2">أحمد السيبراني</h3>
+                    <p class="text-blue-400 text-sm mb-4">متخصص فحص ثغرات وحماية</p>
+                    <div class="flex justify-center gap-1 text-yellow-400 mb-6">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <a href="#order-form" onclick="setExpert('أحمد السيبراني')" class="block w-full border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-2 rounded-xl transition">اختيار الخبير</a>
+                </div>
+
+                <div class="hacker-card bg-slate-800 p-8 rounded-3xl text-center">
+                    <div class="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">👩‍💻</div>
+                    <h3 class="text-xl font-bold mb-2">فاطمة الأمنية</h3>
+                    <p class="text-blue-400 text-sm mb-4">استرجاع حسابات وتأمين خصوصية</p>
+                    <div class="flex justify-center gap-1 text-yellow-400 mb-6">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#order-form" onclick="setExpert('فاطمة الأمنية')" class="block w-full border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-2 rounded-xl transition">اختيار الخبير</a>
+                </div>
+
+                <div class="hacker-card bg-slate-800 p-8 rounded-3xl text-center">
+                    <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">👨‍💻</div>
+                    <h3 class="text-xl font-bold mb-2">علي التقني</h3>
+                    <p class="text-blue-400 text-sm mb-4">مكافحة الابتزاز والجرائم الإلكترونية</p>
+                    <div class="flex justify-center gap-1 text-yellow-400 mb-6">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <a href="#order-form" onclick="setExpert('علي التقني')" class="block w-full border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white py-2 rounded-xl transition">اختيار الخبير</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="order-form" class="py-20 px-4">
+        <div class="max-w-2xl mx-auto glass p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-2xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-400">نموذج طلب الخدمة</h2>
+            
+            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm mb-2 opacity-70">الخبير المطلوب</label>
+                    <input type="text" id="selected-hacker" name="hacker-name" readonly class="w-full bg-slate-900/50 border border-slate-700 p-3 rounded-xl text-blue-400 font-bold" value="لم يتم اختيار خبير">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm mb-2 opacity-70">اسمك</label>
+                        <input type="text" name="client-name" required class="w-full bg-slate-900 border border-slate-700 p-3 rounded-xl focus:border-blue-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-2 opacity-70">بريدك للإرسال</label>
+                        <input type="email" name="_replyto" required class="w-full bg-slate-900 border border-slate-700 p-3 rounded-xl focus:border-blue-500 outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm mb-2 opacity-70">اشرح المشكلة (يجب أن تكون لفعل الخير)</label>
+                    <textarea name="problem" rows="4" required class="w-full bg-slate-900 border border-slate-700 p-3 rounded-xl focus:border-blue-500 outline-none"></textarea>
+                </div>
+                
+                <div class="p-4 bg-blue-500/10 rounded-xl border border-blue-500/20">
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" required class="w-5 h-5 accent-blue-600">
+                        <span class="text-xs text-blue-200 leading-relaxed">أتعهد بأن هذه المشكلة قانونية وطلبي يهدف فقط لفعل الخير واسترداد حق، وأخلي مسؤولية المنصة من أي سوء استخدام.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-bold shadow-lg transition">إرسال الطلب فوراً</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-950 pt-20 pb-10 border-t border-white/5 px-4 text-center">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-right">
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-white">حقوق المنصة</h3>
+                <p class="text-slate-500 text-sm leading-loose">© جميع الحقوق محفوظة لـ صلوات جنية <br> انستقرامي <span class="text-blue-400">@fy8ly</span> 2026. يمنع النسخ.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-white">تواصل معنا</h3>
+                <div class="space-y-4 text-slate-400 text-sm">
+                    <p><i class="fas fa-envelope ml-2"></i> wffds10@gmail.com</p>
+                    <p><i class="fab fa-instagram ml-2"></i> @9ynm</p>
+                    <p><i class="fab fa-telegram ml-2"></i> @d8fia</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-6 text-white">الدعم الفني</h3>
+                <p class="text-slate-500 text-sm">نحن متاحون 24/7 لمساعدة ضحايا الاختراق والابتزاز. لا تتردد في طلب المساعدة.</p>
+            </div>
+        </div>
+        <div class="mt-20 pt-8 border-t border-white/5 text-slate-600 text-[10px]">
+            تم التطوير بواسطة ذكاء اصطناعي لدعم المبادرات الأخلاقية
+        </div>
+    </footer>
+
+    <script>
+        // دالة لاختيار الخبير ووضع اسمه في النموذج
+        function setExpert(name) {
+            document.getElementById('selected-hacker').value = name;
+            document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
